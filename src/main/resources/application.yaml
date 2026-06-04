@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: local
+
+  application:
+    name: posthub
+
+  datasource:
+    url: jdbc:postgresql://localhost:5453/posthub
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
